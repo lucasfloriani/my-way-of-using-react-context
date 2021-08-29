@@ -5,12 +5,10 @@ function App() {
   const { state, actions } = useCounterContext()
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={actions.decrease}>-</button>
-        <h1>{state.total}</h1>
-        <button onClick={actions.increase}>+</button>
-      </header>
+    <div className="counter-wrapper">
+      <button className="button" onClick={actions.decrease}>Decrease</button>
+      <h1 className="number">{state.total}</h1>
+      <button className="button" onClick={actions.increase}>Increase</button>
     </div>
   );
 }
