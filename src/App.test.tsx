@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import CounterProvider from './providers/count';
 import App from './App';
 
@@ -18,9 +18,7 @@ test('increase action', async () => {
     </CounterProvider>
   );
   fireEvent.click(screen.getByTestId('increase-button'))
-  await waitFor(() => {
-    expect(screen.getByTestId('total-text')).toHaveTextContent('1');
-  })
+  expect(screen.getByTestId('total-text')).toHaveTextContent('1');
 });
 
 test('decrease action', async () => {
@@ -30,7 +28,5 @@ test('decrease action', async () => {
     </CounterProvider>
   );
   fireEvent.click(screen.getByTestId('decrease-button'))
-  await waitFor(() => {
-    expect(screen.getByTestId('total-text')).toHaveTextContent('-1');
-  })
+  expect(screen.getByTestId('total-text')).toHaveTextContent('-1');
 });
