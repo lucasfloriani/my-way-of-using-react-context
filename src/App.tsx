@@ -1,23 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import useCounterContext from './providers/count/useCounter';
 
 function App() {
+  const { state, actions } = useCounterContext()
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={actions.decrease}>-</button>
+        <h1>{state.total}</h1>
+        <button onClick={actions.increase}>+</button>
       </header>
     </div>
   );
