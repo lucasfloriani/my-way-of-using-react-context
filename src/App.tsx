@@ -6,9 +6,9 @@ function App() {
 
   return (
     <div className="counter-wrapper">
-      <button className="button" onClick={actions.decrease}>Decrease</button>
-      <h1 className="number">{state.total}</h1>
-      <button className="button" onClick={actions.increase}>Increase</button>
+      <button className="button" data-testid="decrease-button" onClick={actions.decrease}>Decrease</button>
+      <h1 className="number" data-testid="total-text">{state.total}</h1>
+      <button className="button" data-testid="increase-button" onClick={actions.increase}>Increase</button>
     </div>
   );
 }
