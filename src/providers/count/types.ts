@@ -4,7 +4,7 @@ export type InitialStateProps = {
 
 export type ReducerActionProps =
   | { type: 'INCREASE' }
-  | { type: 'DECREASE', payload: string }
+  | { type: 'DECREASE' }
 
 type DispatchTypes = {
   increase: () => void,
