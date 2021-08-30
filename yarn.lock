@@ -10887,9 +10887,9 @@ use-immer@^0.6.0:
   integrity sha512-dFGRfvWCqPDTOt/S431ETYTg6+uxbpb7A1pptufwXVzGJY3RlXr38+3wyLNpc6SbbmAKjWl6+EP6uW74fkEsXQ==
 
 use-reducer-util@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/use-reducer-util/-/use-reducer-util-1.0.1.tgz#8a119f712d2217b45b883cdbcd1a2da75190e784"
-  integrity sha512-2Jia0ncQre4wbJz7vzfKTCilD+jFTTEeTlAbwbnisiRFwsupoAqkjjDtjGfyTK0arJB7ZZp6rYW5R+iV9nBKig==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/use-reducer-util/-/use-reducer-util-1.0.4.tgz#3bf7bbb01a5f341b0f88d3dcf597475bc85a2390"
+  integrity sha512-2G7onieVLB5uT4FTDELB5EfaRiPvHB9eScpUPi0Xs15iXnR8zUdSIIg4OaspFao3iyWnsSBm6qljB6xK/pux9g==
 
 use@^3.1.0:
   version "3.1.1"
