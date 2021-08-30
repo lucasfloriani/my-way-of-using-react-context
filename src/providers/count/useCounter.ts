@@ -1,6 +1,6 @@
 import { createContext, useContext, useCallback } from 'react'
 
-import createReducer from '../../helpers/createReducer'
+import createReducer from 'use-reducer-util'
 import {
   InitialStateProps,
   ReducerActionProps,
